@@ -1,0 +1,40 @@
+@import '../../styles/variables';
+.content-title {
+	font-family: $helvetica;
+	font-weight: 700;
+	font-size: 2rem;
+
+	span {
+		color: $deep-orange;
+	}
+}
+
+.content-text {
+	margin-top: 36px;
+	font-family: $helvetica;
+	font-size: 1.5rem;
+
+	span {
+		display: block;
+	}
+
+	span:last-child {
+		margin-top: 16px;
+	}
+}
+
+.section-button {
+	padding: 16.5px 73px;
+	background-color: $deep-orange;
+	color: white;
+	border-radius: 38px;
+	margin-left: 8rem;
+
+	&:hover {
+		background-color: darken($deep-orange, 10%);
+	}
+
+	&-wrapper {
+		margin-top: 36px;
+	}
+}

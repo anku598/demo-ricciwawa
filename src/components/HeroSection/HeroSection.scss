@@ -1,0 +1,30 @@
+@import '../../styles/variables';
+
+.abstract-image {
+	// position: absolute;
+	// right: -30px;
+	// margin-right: -100px;
+}
+
+.hero-content-container {
+	margin-top: 50px;
+}
+
+.hero-section-title {
+	span {
+		display: block;
+	}
+}
+
+.hero-section-title {
+	font-family: $helvetica;
+	font-weight: 700;
+	font-size: 60px;
+}
+.text-content {
+	margin-top: 36px;
+	font-family: $helvetica;
+	font-weight: 500;
+	font-size: 26px;
+}
+

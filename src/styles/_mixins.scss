@@ -1,0 +1,31 @@
+$paddings: (
+	'xs': 20,
+	'sm': 32,
+	'md': 40,
+	'lg': 60,
+	'xl': 80,
+);
+@mixin section-padding($pd: $paddings) {
+	@each $breakpoint, $value in $pd {
+		@include media-breakpoint-up(#{$breakpoint}) {
+			padding-top: #{$value + px};
+			padding-bottom: #{$value + px};
+		}
+	}
+}
+
+@mixin section-padding-top($pd: $paddings) {
+	@each $breakpoint, $value in $pd {
+		@include media-breakpoint-up(#{$breakpoint}) {
+			padding-top: #{$value + px};
+		}
+	}
+}
+
+@mixin section-padding-bottom($pd: $paddings) {
+	@each $breakpoint, $value in $pd {
+		@include media-breakpoint-up(#{$breakpoint}) {
+			padding-bottom: #{$value + px};
+		}
+	}
+}

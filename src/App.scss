@@ -1,0 +1,256 @@
+@import '~bootstrap/scss/bootstrap';
+@import './styles/variables';
+@import './styles/mixins';
+
+.section-wrapper {
+	@include section-padding;
+}
+
+.section-wrapper-top {
+	@include section-padding-top;
+}
+
+.section-wrapper-bottom {
+	@include section-padding-bottom;
+}
+
+button {
+	box-shadow: none !important;
+	border: none !important;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueBold.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueBold.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueBold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueRegular.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueRegular.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueBlackCond.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueBlackCond.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueLight.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueMedium.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueMedium.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueMedium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueHeavy.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueHeavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueItalic.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueItalic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueThin.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueThin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HelveticaNeue';
+	src: url('./fonts/HelveticaNeueLight.woff2') format('woff2'),
+		url('./fonts/HelveticaNeueLight.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+.custom-container {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@include media-breakpoint-up(sm) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding-left: 150px;
+		padding-right: 150px;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+
+	@include media-breakpoint-up(xxxl) {
+		// padding-left: 200px;
+		// padding-right: 200px;
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+	@include media-breakpoint-up(xxxxl) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	@include media-breakpoint-up(ultraxl) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
+
+.custom-container-only-right {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@include media-breakpoint-up(sm) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-left: 0;
+		padding-right: 100px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding-left: 0;
+		padding-right: 150px;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		padding-left: 0;
+		padding-right: 200px;
+	}
+
+	@include media-breakpoint-up(xxxl) {
+		// padding-left: 200px;
+		// padding-right: 200px;
+		padding-left: 0;
+		padding-right: 200px;
+	}
+	@include media-breakpoint-up(xxxxl) {
+		padding-left: 0;
+		padding-right: 200px;
+	}
+
+	@include media-breakpoint-up(ultraxl) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.custom-container-only-left {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@include media-breakpoint-up(sm) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	@include media-breakpoint-up(md) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		padding-left: 100px;
+		padding-right: 0px;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding-left: 150px;
+		padding-right: 0px;
+	}
+
+	@include media-breakpoint-up(xxl) {
+		padding-left: 200px;
+		padding-right: 0px;
+	}
+
+	@include media-breakpoint-up(xxxl) {
+		// padding-left: 200px;
+		// padding-right: 200px;
+		padding-left: 200px;
+		padding-right: 0px;
+	}
+	@include media-breakpoint-up(xxxxl) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	@include media-breakpoint-up(ultraxl) {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}
